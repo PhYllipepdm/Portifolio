@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="/portifolio/assets/styles/style.css">
+    <script src="/portifolio/scripts/scipts.js"></script>
+</head>
+<body>
+    <header>
+        <h2 class="titulo" style="font-size: 800;">FELIPE SANTOS</h2>
+        <nav>
+            <ul>
+                <li><a href="/portifolio/index.html">Home</a></li>
+                <li><a href="/portifolio/skills.html">Skills</a></li>
+                <li><a href="/portifolio/projects.html">Projects</a></li>
+                <li><a href="#" id="connect">Let`s Connect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main_projetos">
+        <h1 class="titulo_projetos">Últimos <span style="color:#00c3ffe1; 
+        text-shadow: 2px 2px 10px #00ffffe1;">Projetos</span></h1>
+        <section class="imagens">
+            <div class="foto"><a href="#foto1"><img src="/portifolio/assets/img/Tela_Login.PNG.png"alt="Projeto Tela de Login" 
+            class="tela_login"></a></div>
+            <div class="foto"><a href="#foto2"><img src="/portifolio/assets//img/LandPage.PNG.png" alt="LandPage"
+            class="LandPage"></a></div>
+            <div class="foto"><a href="#foto3"><img src="/portifolio/assets/img/LandPage2.PNG.png" alt="LandPage2" 
+            class="LandPage2"></a></div>
+        </section>
+        <section class="section2">
+            <h3>Calculadora</h3>
+            <div class="calculadora">
+                <div class="tela"></div>
+                <table>
+                    <tr>
+                        <td><button onclick="clean()">C</button></td>
+                        <td><button onclick="voltar()"><</button></td>
+                        <td><button onclick="inserir('/')">/</button></td>
+                        <td><button onclick="inserir('*')">x</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="inserir('7')">7</button></td>
+                        <td><button onclick="inserir('8')">8</button></td>
+                        <td><button onclick="inserir('9')">9</button></td>
+                        <td><button onclick="inserir('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="inserir('4')">4</button></td>
+                        <td><button onclick="inserir('5')">5</button></td>
+                        <td><button onclick="inserir('6')">6</button></td>
+                        <td><button onclick="inserir('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="inserir('1')">1</button></td>
+                        <td><button onclick="inserir('2')">2</button></td>
+                        <td><button onclick="inserir('3')">3</button></td>
+                        <td rowspan="2"><button style="height: 102px; background-color: #00c3ffe1;"
+                             onclick="resultado()">=</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button style="width: 102px;" onclick="inserir('0')">0</button></td>
+                        <td><button onclick="inserir('0')">.</button></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
