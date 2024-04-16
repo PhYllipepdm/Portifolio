@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Roboto+Mono&display=swap');
+body{
+    background-image: url(https://github.com/judygab/web-dev-projects/blob/main/personal-portfolio/src/assets/img/banner-bg.png?raw=true);
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 15px;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+li {
+    display: inline-block;
+    margin: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s ease-in-out;
+}
+nav ul li a:hover{
+    text-decoration: none solid 2px #fff; 
+    background-color: #ffffff57;
+    border-radius: 8px;
+    padding: 10px;
+}
+main{
+    /* margin-top: 120px; */
+    display: flex;
+    flex-direction: row;
+}
+#connect{
+    border: 2px solid #fff;
+    padding: 15px;
+}
+h4{
+    border: 2px solid #fff;
+    width: fit-content;
+    padding: 5px;
+    background: linear-gradient(rgba(151, 61, 136, 0.336),rgba(137, 43, 226, 0.37));
+}
+.esquerda{
+    width: 50vw;
+    height: 100vh;
+    margin-top: 50px;
+}
+.links{
+    display: flex;
+    flex-direction: row;
+}
+.link_git img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    transition: 0.5s;
+}
+.link_git:hover{
+    background-color: #ffffff57;
+    border-radius: 8px;
+}
+.link_instagram img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    transition: 0.5s;
+}
+.link_instagram:hover{
+    background-color: #ffffff57;
+    border-radius: 8px;
+}
+.link_linkedin img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    transition: 0.5s;
+}
+.link_linkedin:hover{
+    background-color: #ffffff57;
+    border-radius: 8px;
+}
+.direita{
+    width: 50vw;
+    height: 100vh;
+    margin-top: 120px;
+}
+.direita img{
+    width: 500px;
+    height: 500px;
+    margin-left: 70px;
+}
+.img_animada{
+    position: relative;
+    animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateX(0); /* Começa e termina na posição original */
+    }
+    50% {
+        transform: translateX(50px); /* Move para a direita */
+    }
+}
+/* CSS para página de projetos */
+
+.main_projetos{
+    text-align: center;
+    display: block;
+}
+section div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imagens {
+    display: flex; 
+}
+.imagens div {
+    margin-right: 10px; /* Espaço entre as imagens */
+}
+.imagens img {
+    max-width: 100%; /* Limita a largura das imagens ao tamanho máximo do contêiner */
+    height: auto;/* Mantém a proporção original da imagem */
+    border-radius: 8px;
+}
+.foto:target{
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tela_login:hover{
+    background-color: #ffffff57;
+    width: 1300px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.LandPage:hover{
+    background-color: #ffffff57;
+    width: 1300px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.LandPage2:hover{
+    background-color: #ffffff57;
+    width: 1300px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.section2{
+    background-color: #212121;
+    border-radius: 8px;
+    margin-top: 8px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.calculadora{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    width: 25%;
+    height: 25%;
+    padding-top: 8px;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+.calculadora button{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff57;
+    color: #fff;
+}
+.calculadora button:hover{
+    background-color: #afafaf57;
+}
+.tela{
+    background-color: #fff;
+    height: 40px;
+    width: 200px;
+    color: black;
+    font-size: 18px;
+    text-align: right;
+    margin: 10px;
+    border-radius: 8px;
+    justify-content: right;
+    padding-right: 2px;
+}
+
+/* CSS para página de skills */
+.main_skills{
+    text-align: center;
+    display: block;
+}
+.fundo{
+    background-color: #212121;
+    font-size: smaller;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+.skills{
+    width: 500px;
+    border: #fff 2px solid;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0 15px 20px #3a3a3a;
+}
+.skills li{
+    margin: 20px 0;
+}
+.skills .barras{
+    background-color: #fff;
+    display: block;
+    height: 20px;
+    position: relative;
+    border-radius: 20px;
+    width: 400px;
+    position: relative;
+}
+.barras > span{
+    height: 20px;
+    background: linear-gradient(to right ,#fe8f62 0, #ff8564 8.33%, #ff7967 16.67%, #ff6c6b 25%, #fd5e6e 33.33%, #f84e73 41.67%, #f23c78 50%, #ea287e 58.33%, #e10e86 66.67%, #d6008f 75%, #ca0098 83.33%, #bb00a3 91.67%, #aa00ae 100%);
+    position: absolute;
+    width: 65%;
+    display: flex;
+    align-items: flex-start;
+    border-radius: 20px;
+    animation: html 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
